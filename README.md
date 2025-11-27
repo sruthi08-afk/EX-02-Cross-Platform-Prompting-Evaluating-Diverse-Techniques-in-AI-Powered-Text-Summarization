@@ -19,8 +19,118 @@ Speed
 User experience
 
 ## Algorithm
-https://in.docworkspace.com/d/sIIethdfFAfj0zccG?sa=601.1037
 
-## Result
-Thus the prompting tools are executed and analysed successfully
+---
+
+## Objective
+
+Evaluate and compare **zero-shot, few-shot, chain-of-thought, and role-based prompting** techniques across multiple AI platforms (ChatGPT, Gemini, Claude, Copilot) to identify the best approach for summarizing a 500-word technical article on **"The Basics of Blockchain Technology"** for undergraduate students
+
+
+---
+
+##  Define Prompt Templates for Each Technique
+
+### 1. Zero-shot Prompting
+
+**Goal:** AI summarizes with no examples or extra instructions.
+**Prompt:**
+
+```
+Summarize the following article on "The Basics of Blockchain Technology" in simple language suitable for undergraduate students:
+
+[Insert full article text here]
+```
+
+---
+
+### 2. Few-shot Prompting
+
+**Goal:** Provide 2-3 example summaries first, then ask AI to summarize.
+**Prompt:**
+
+```
+Here are examples of summaries of technical articles for undergraduate students:
+
+Example 1: [Insert example summary of unrelated article]  
+Example 2: [Insert example summary of unrelated article]
+
+Now, summarize the following article on "The Basics of Blockchain Technology" in a similar style:
+
+[Insert full article text here]
+```
+
+---
+
+### 3. Chain-of-Thought Prompting
+
+**Goal:** AI explains or reasons step-by-step before summarizing.
+**Prompt:**
+
+```
+Read the following article on "The Basics of Blockchain Technology." First, explain its main points step-by-step. Then provide a concise summary suitable for undergraduate students.
+
+[Insert full article text here]
+```
+
+---
+
+### 4. Role-based Prompting
+
+**Goal:** Assign a role/persona to influence tone and style.
+**Prompt:**
+
+```
+You are a university professor teaching blockchain technology to first-year students. Summarize the following article clearly and simply so that undergraduates can easily understand it:
+
+[Insert full article text here]
+```
+
+---
+
+## Platforms for Testing
+
+Run the above prompts on:
+
+* **ChatGPT**
+* **Gemini**
+* **Claude**
+* **Copilot**
+
+For each platform + prompting technique combination, collect the output.
+
+---
+
+##  Evaluation Criteria
+
+Rate each summary on:
+
+| Criterion           | Description                                          |
+| ------------------- | ---------------------------------------------------- |
+| **Accuracy**        | Faithfulness to the original content; no errors.     |
+| **Coherence**       | Logical flow, readability, and clarity.              |
+| **Simplicity**      | Easy to understand for undergrads.                   |
+| **Speed**           | Time taken to generate the summary (in seconds).     |
+| **User Experience** | Ease of prompt use, interaction, and output quality. |
+
+---
+
+##  Result Reporting
+
+Use a table format for clarity:
+
+| Platform | Prompting Technique | Accuracy | Coherence | Simplicity | Speed (secs) | User Experience | Notes              |
+| -------- | ------------------- | -------- | --------- | ---------- | ------------ | --------------- | ------------------ |
+| ChatGPT  | Zero-shot           | 4        | 4         | 4          | 10           | 5               | Quick, good output |
+| Gemini   | Few-shot            | 5        | 5         | 4          | 15           | 4               | More detailed      |
+| Claude   | Chain-of-Thought    | 4        | 5         | 3          | 20           | 3               | Slow but thorough  |
+| Copilot  | Role-based          | 3        | 4         | 5          | 12           | 4               | Simple and clear   |
+
+---
+
+
+
+
+
+
 
